@@ -1,8 +1,8 @@
-function Link({ href }) {
+function Link({ href, children = "Saiba mais" }) {
   return (
     <>
       <a target="_blank" rel="noreferrer" href={href}>
-        Saiba mais
+        {children}
       </a>
       <br />
     </>

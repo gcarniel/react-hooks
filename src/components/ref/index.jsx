@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import Example from "../../base/Example";
-import Link from "../../base/Link";
-import Paragraph from "../../base/Paragraph";
-import Content from "../../content";
+import Example from "../base/Example";
+import Link from "../base/Link";
+import Paragraph from "../base/Paragraph";
+import Content from "../content";
 
 import "./styles.css";
 
@@ -53,7 +53,6 @@ function Ref() {
           perfomático. Pois com useState a cada atualização do estado o react
           vai renderizar o componente de novo.
         </Paragraph>
-        <Paragraph></Paragraph>
         <Link href="https://www.youtube.com/watch?v=eypNvly4s3Q&list=PL8YNlUoOZkkaCJENGzHFXrRwwjuwEh6nC&index=3&ab_channel=Huriel" />
         <p>
           No exemplo abaixo usei o useRef para armazenar o valor de counter,

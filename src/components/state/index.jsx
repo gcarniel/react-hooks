@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Example from "../../base/Example";
-import Link from "../../base/Link";
-import Paragraph from "../../base/Paragraph";
-import Content from "../../content";
+import Example from "../base/Example";
+import Link from "../base/Link";
+import Paragraph from "../base/Paragraph";
+import Content from "../content";
 
 import "./styles.css";
 
