@@ -1,3 +1,5 @@
+import Effect from "./components/hooks/effect";
+import Ref from "./components/hooks/ref";
 import State from "./components/hooks/state";
 
 function App() {
@@ -13,13 +15,8 @@ function App() {
       }}
     >
       <State />
-      <State />
-      <State />
-      <State />
-      <State />
-      <State />
-      <State />
-      <State />
+      <Effect />
+      <Ref />
     </div>
   );
 }
