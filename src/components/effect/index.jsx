@@ -74,6 +74,10 @@ function Effect() {
           vazamento de memória.
         </Paragraph>
 
+        <Link href="https://pt-br.reactjs.org/docs/hooks-reference.html#useeffect">
+          Documentação
+        </Link>
+
         <Link href="https://www.youtube.com/watch?v=NPw6OvXh2xk&list=PL8YNlUoOZkkaCJENGzHFXrRwwjuwEh6nC&index=2" />
 
         <Example>

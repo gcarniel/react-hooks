@@ -53,6 +53,9 @@ function Ref() {
           perfomático. Pois com useState a cada atualização do estado o react
           vai renderizar o componente de novo.
         </Paragraph>
+        <Link href="https://pt-br.reactjs.org/docs/hooks-reference.html#useref">
+          Documentação
+        </Link>
         <Link href="https://www.youtube.com/watch?v=eypNvly4s3Q&list=PL8YNlUoOZkkaCJENGzHFXrRwwjuwEh6nC&index=3&ab_channel=Huriel" />
         <p>
           No exemplo abaixo usei o useRef para armazenar o valor de counter,

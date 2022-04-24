@@ -1,7 +1,7 @@
-function Example({ children }) {
+function Example({ children, example = "Exemplo" }) {
   return (
     <>
-      <p>Exemplo</p>
+      <p>{example}</p>
       <div
         style={{
           textAlign: "center",

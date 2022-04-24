@@ -55,6 +55,10 @@ function State() {
           fazer uma nova renderização para nos mostrar o novo valor.
         </Paragraph>
 
+        <Link href="https://pt-br.reactjs.org/docs/hooks-reference.html#usestate">
+          Documentação
+        </Link>
+
         <Link href="https://www.youtube.com/watch?v=Jxe79XZ9u-Y&list=PL8YNlUoOZkkaCJENGzHFXrRwwjuwEh6nC&index=1" />
 
         <Example>
