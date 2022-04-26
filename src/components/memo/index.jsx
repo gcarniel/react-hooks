@@ -80,6 +80,19 @@ function Memo() {
           está exportando memo(List), assim memorizando todo o componente. Mas
           se eu importar o List fazendo a desestruturação o que será utilizando
           é o List sem memo, então este será atualizado a cada letra digitada.
+          <p>Quando usar?</p>
+          <ul>
+            <li>
+              Componente funcional puro. Puro é quando ele não depende de nada
+              externo
+            </li>
+            <li>Quando o componente renderiza com muita frequência</li>
+            <li>Quando ele re-renderiza com as mesmas props</li>
+            <li>
+              Quando é um componente médio a grande, no sentido de ter muita
+              coisa em tela ou complexo
+            </li>
+          </ul>
         </Paragraph>
 
         <Example example="Exemplo Memo">
@@ -107,6 +120,14 @@ function Memo() {
           Da forma normal que fazemos (sem useMemo) teríamos uma nova
           renderização de Title a cada tecla digitada na input, isso porque o
           pai foi atualizado, consequentemente todos seus filhos serão.
+          <p>Quando usar?</p>
+          <ul>
+            <li>
+              Usamos para evitar cálculos complexos, enteda que cálculos
+              complexos aqui são quaisquer função que faça algo complexo.
+            </li>
+            <li>Para resolver problemas de igualdade referencial</li>
+          </ul>
         </Paragraph>
         <Example example="Exemplo useMemo">
           <form onSubmit={submitUseMemo}>

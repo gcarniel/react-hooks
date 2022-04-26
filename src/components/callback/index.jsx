@@ -79,8 +79,18 @@ function Callback() {
         </ul>
 
         <Paragraph>
-          Para adicionar um texto digite e de enter. Isso chamará a função
-          submit
+          <p>Quando usar?</p>
+          <ul>
+            <li>
+              Quando for uma função que é passada para filhos e que seja
+              complexa
+            </li>
+            <li>
+              Quando estiver em um contexto que mais tem um componente acessa a
+              função
+            </li>
+            <li>Para resolver problemas de igualdade referencial</li>
+          </ul>
         </Paragraph>
 
         <Link href="https://pt-br.reactjs.org/docs/hooks-reference.html#usecallback">
