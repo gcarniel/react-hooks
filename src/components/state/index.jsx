@@ -35,7 +35,7 @@ function State() {
             retorno
           </li>
           <li>
-            Podemos dar qualquer nome, mas a firma acima é uma convenção da
+            Podemos dar qualquer nome, mas a forma acima é uma convenção da
             comunidade
           </li>
           <li>O 'set' não é obrigatório, mas é também uma conveção</li>

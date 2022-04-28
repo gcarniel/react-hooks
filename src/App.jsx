@@ -2,6 +2,7 @@ import Callback from "./components/callback";
 import Context from "./components/context";
 import Effect from "./components/effect";
 import Memo from "./components/memo";
+import Reducer from "./components/reducer";
 import Ref from "./components/ref";
 import State from "./components/state";
 import { CounterContextProvider } from "./context/CounterContext";
@@ -25,6 +26,7 @@ function App() {
         <Context />
         <Memo />
         <Callback />
+        <Reducer />
       </div>
     </CounterContextProvider>
   );
