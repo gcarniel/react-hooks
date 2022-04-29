@@ -49,18 +49,20 @@ function Memo() {
           <li>
             <code>useMemo(() =&gt; {}, [])</code>
           </li>
+          <li>Guarda em memória o retorno da função</li>
+
           <li>
             Ele recebe dois parâmetros, o primeiro é uma função e o segundo é um
             array de dependências.
           </li>
           <li>
-            Seu objetivo é de não criar uma função do zero sem necessidade.
+            Seu objetivo é guardar em memória a função que passarmos para ele.
           </li>
           <li>
             Toda vez que um componente é renderizado por padrão as funções
             também são recriadas, geralmente não tem problema, porém quando
             temos uma função bastante complexa o processo de recriá-la pode
-            atrapalhar na perfomance, aí que entra o useCallback, memorizando a
+            atrapalhar na perfomance, aí que entra o useMemo, memorizando a
             função e não recriando-a sempre que uma renderização acontece.
           </li>
         </ul>

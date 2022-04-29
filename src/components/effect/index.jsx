@@ -60,6 +60,10 @@ function Effect() {
             Agora se passarmos argumentos no array sempre que algum argumento do
             array mudar o efeito será executado
           </li>
+          <li>
+            O conteúdo do useEffect só será execatado quando a DOM estiver
+            montada. Diferença para o useLayoutEffect
+          </li>
         </ul>
 
         <Paragraph>

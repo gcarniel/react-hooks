@@ -1,6 +1,7 @@
 import Callback from "./components/callback";
 import Context from "./components/context";
 import Effect from "./components/effect";
+import LayoutEffect from "./components/layoutEffect";
 import Memo from "./components/memo";
 import Reducer from "./components/reducer";
 import Ref from "./components/ref";
@@ -22,6 +23,7 @@ function App() {
       >
         <State />
         <Effect />
+        <LayoutEffect />
         <Ref />
         <Context />
         <Memo />

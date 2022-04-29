@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useReducer, useState } from "react";
 import Example from "../base/Example";
 import Link from "../base/Link";
 import Paragraph from "../base/Paragraph";

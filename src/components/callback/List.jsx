@@ -14,7 +14,7 @@ function List({ list, transformText }) {
           return <li key={i}>{tl}</li>;
         })}
       </ul>
-      <p>Renderizou {renders}</p>
+      <p>Renderizou {renders}x</p>
     </>
   );
 }

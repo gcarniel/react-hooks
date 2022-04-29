@@ -11,9 +11,7 @@ function Callback() {
   const [showContent, setShowContent] = useState(false);
   const [text, setText] = useState("");
   const [textList, setTextList] = useState([]);
-  const [withUseCallback, setWithUseCallback] = useState(true);
-
-  console.log("irrrrr");
+  const [withUseCallback, setWithUseCallback] = useState(false);
 
   const convertTextToUpper = () => {
     const transformText = text.split("").map((item, i) => {
@@ -62,6 +60,7 @@ function Callback() {
           <li>
             <code>useCallback(() =&gt; {}, [])</code>
           </li>
+          <li>Guarda em memória a função em si</li>
           <li>
             Ele recebe dois parâmetros, o primeiro é uma função e o segundo é um
             array de dependências.
@@ -86,10 +85,11 @@ function Callback() {
               complexa
             </li>
             <li>
-              Quando estiver em um contexto que mais tem um componente acessa a
+              Quando estiver em um contexto que mais de um componente acessa a
               função
             </li>
             <li>Para resolver problemas de igualdade referencial</li>
+            <li>Quando fizer chamadas desnecessárias</li>
           </ul>
         </Paragraph>
 
@@ -100,6 +100,12 @@ function Callback() {
         <Link href="https://www.youtube.com/watch?v=kzAMDNBiAzs&list=PL8YNlUoOZkkaCJENGzHFXrRwwjuwEh6nC&index=7" />
 
         <Example>
+          <Paragraph>
+            Ao iniciar a página o useCallback não é utilizado, então a cada
+            letra digitada na input o componente vai renderizar a carregar o
+            List. Ao mudar o select para 'Com useCallback' faremos a memorização
+            da função, então a lista não será renderizada sem necessidade.
+          </Paragraph>
           <form onSubmit={submit}>
             <input
               type="text"
@@ -108,10 +114,10 @@ function Callback() {
             />
           </form>
           <select onChange={(e) => setWithUseCallback(e.target.value)}>
-            <option value={true}>Com useCallback</option>
             <option value={false}>Sem useCallback</option>
+            <option value={true}>Com useCallback</option>
           </select>
-
+          {JSON.stringify(withUseCallback)}
           {withUseCallback ? (
             <List
               list={textList}
